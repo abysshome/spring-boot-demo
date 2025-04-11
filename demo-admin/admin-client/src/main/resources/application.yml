@@ -6,7 +6,7 @@ spring:
   application:
     # Spring Boot Admin展示的客户端项目名，不设置，会使用自动生成的随机id
     name: spring-boot-demo-admin-client
-  boot:
+  boot: 
     admin:
       client:
         # Spring Boot Admin 服务端地址

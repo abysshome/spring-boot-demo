@@ -1,7 +1,7 @@
-server:
+server: # server代表
   port: 8080
   servlet:
     context-path: /demo
-spring:
-  profiles:
-    active: prod
+spring: # 配置环境
+  profiles: # 配置环境
+    active: dev # 可选值：dev、test、prod

@@ -15,12 +15,13 @@ import org.springframework.web.bind.annotation.RestController;
  * @author yangkai.shen
  * @date Created in 2018-09-29 10:49
  */
-@RestController
+@RestController // 含义为：@Controller + @ResponseBody
 public class PropertyController {
     private final ApplicationProperty applicationProperty;
     private final DeveloperProperty developerProperty;
 
-    @Autowired
+    @Autowired // - Spring 的依赖注入注解，用于自动装配 ApplicationProperty 和 DeveloperProperty 的实例。
+               //- 在这里，Spring 容器会根据类型（ ApplicationProperty 和 DeveloperProperty ）找到对应的 Bean 并注入到控制器中
     public PropertyController(ApplicationProperty applicationProperty, DeveloperProperty developerProperty) {
         this.applicationProperty = applicationProperty;
         this.developerProperty = developerProperty;

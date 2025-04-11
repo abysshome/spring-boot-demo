@@ -1,5 +1,6 @@
 server:
   port: 8080
+  # servlet配置用于定义web服务器的servlet容器相关设置
   servlet:
     context-path: /demo
 # 若要访问端点信息，需要配置用户名和密码
